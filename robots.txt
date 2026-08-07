@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://realbigtop.com/sitemap.xml
