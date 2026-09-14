@@ -194,8 +194,7 @@ h3 {
   line-height: 1.42;
 }
 
-.hero-actions,
-.button-row {
+.hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -267,24 +266,16 @@ h3 {
   color: var(--ink);
 }
 
-.intro-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 28px;
-  align-items: center;
+.intro-copy {
   padding-top: 28px;
   padding-bottom: 28px;
 }
 
-.intro-grid p {
+.intro-copy p {
+  max-width: 900px;
   margin: 0;
   font-size: 20px;
   font-weight: 760;
-}
-
-.inline-link {
-  color: var(--red);
-  font-weight: 900;
 }
 
 .section-heading {
@@ -340,7 +331,6 @@ h3 {
   color: var(--muted);
 }
 
-.split-layout,
 .booking-grid,
 .press-layout {
   display: grid;
@@ -349,7 +339,6 @@ h3 {
   align-items: center;
 }
 
-.album-card,
 .booking-card,
 .social-card,
 .video-card {
@@ -360,23 +349,6 @@ h3 {
   overflow: hidden;
 }
 
-.album-card img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-
-.album-card div {
-  display: grid;
-  gap: 4px;
-  padding: 18px;
-}
-
-.album-card strong {
-  font-size: 20px;
-}
-
-.album-card span,
 .social-card p,
 .video-card span,
 .fallback-note,
@@ -528,11 +500,9 @@ cite {
   }
 
   .hero-inner,
-  .split-layout,
   .booking-grid,
   .press-layout,
-  .heading-split,
-  .intro-grid {
+  .heading-split {
     grid-template-columns: 1fr;
   }
 
@@ -568,13 +538,12 @@ cite {
     padding: 56px 18px;
   }
 
-  .intro-grid {
+  .intro-copy {
     padding-top: 24px;
     padding-bottom: 24px;
   }
 
   .hero-actions,
-  .button-row,
   .button {
     width: 100%;
   }
